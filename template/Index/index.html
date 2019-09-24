@@ -10,7 +10,7 @@
 	<!--插件:static文件夹-->
 	<link rel="stylesheet" href="../../assets/static/bootstrap-3.3.7/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="../../assets/static/swiper-4.3.3/swiper.min.css" />
-	<link rel="stylesheet" href="../../assets/static/jquery.easy_slides/jquery.easy_slides.css" />
+	<!--<link rel="stylesheet" href="../../assets/static/jquery.easy_slides/jquery.easy_slides.css" />-->
 	<!--自定义样式表-->
 	<link rel="stylesheet" href="../../assets/css/common.css" /> <!--公共样式表-->
 	<link rel="stylesheet" href="../../assets/css/index.css" /> <!--本页样式表-->
@@ -60,15 +60,22 @@
 					<div class="en">product</div>
 				</div>
 				<!--内容-->
-				<div class="main-con">
-				    <div class="slider slider_circle_10">
-				        <div>1</div>
-				        <div>2</div>
-				        <div>3</div>
-				        <div>4</div>
-				        <div class="next_button"></div>
-				        <div class="prev_button"></div>
-				    </div>
+				<div class="main-con" style="height: 1000px;">
+					<div id="carousel">
+					 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
+					 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
+					 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
+					 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
+					 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
+					 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
+					 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
+					 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
+					 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
+					</div>
+					<div id="buttons">
+					 	<button class="left">←</button>
+						<button class="right">→</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -89,10 +96,10 @@
 	<script src="../../assets/static/jquery-2.1.4/jquery.min.js"></script>
 	<script src="../../assets/static/bootstrap-3.3.7/js/bootstrap.js"></script>
 	<script src="../../assets/static/swiper-4.3.3/swiper.min.js"></script>
-	<script src="../../assets/static/jquery.easy_slides/jquery.easy_slides.js"></script>
+	<script src="../../assets/static/cloud9carousel/jquery.cloud9carousel.js"></script>
 	<!--自定义js-->
 	<script src="../../assets/js/common.js"></script> <!--公共js部分-->
-	<script src="../../assets/js/index.js"></script>	 <!--本页js-->
+	<!--<script src="../../assets/js/index.js"></script>	 <!--本页js-->-->
 	
 	<script>  
 		//banner
@@ -120,12 +127,13 @@
 	  	})        
 	</script>
 	<script>
-		$(function() {
-            $('.slider_circle_10').EasySlides({
-//              'autoplay': true,
-                'show': 13
-            })
-       });
+$("#carousel").Cloud9Carousel( {
+ buttonLeft:$("#buttons>.left"),
+ buttonRight:$("#buttons>.right"),
+// autoPlay:1,
+ bringToFront:true
+}
+);
 	</script>
 </body>
 </html>
