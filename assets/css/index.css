@@ -159,3 +159,27 @@
 .cloud9-item.on {
 	opacity: 1;
 }
+.img-item {
+	display: none;
+}
+@media (max-width: 768px){
+	.carousel-item {
+	    display: none;
+	}	
+	.img-item {
+		display: flex;
+	}
+	.img-item li {
+		width: 48%;
+		height: 100px;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.img-item li:nth-child(even){
+		margin-left: 4%;
+	}
+	.img-item li img {
+		max-width: 100%;
+	}
+}
