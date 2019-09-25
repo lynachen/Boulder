@@ -22,14 +22,6 @@
     
     <!--轮播图start-->
 	<div class="swiper-container swiper-banner">
-		<!--banner图片部分-->
-	    <div class="swiper-wrapper">
-	        <div class="swiper-slide" style="background-image: url(../../assets/image/index/banner.png);"></div>
-	        <div class="swiper-slide" style="background-image: url(../../assets/image/index/banner.png);"></div>
-	        <div class="swiper-slide" style="background-image: url(../../assets/image/index/banner.png);"></div>
-	    </div>
-	    <!-- 如果需要分页器 -->
-	    <div class="swiper-pagination"></div>
 	    <!--banner文案部分-->
 	    <div class="container">
 	    	<div class="swiper-copy">
@@ -47,6 +39,14 @@
 		    	</div>
 	    	</div>
 	    </div>
+	    <!--banner图片部分-->
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide" style="background-image: url(../../assets/image/index/banner.png);"></div>
+	        <div class="swiper-slide" style="background-image: url(../../assets/image/index/banner.png);"></div>
+	        <div class="swiper-slide" style="background-image: url(../../assets/image/index/banner.png);"></div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
 	</div>  
 	<!--轮播图end-->
 	
@@ -60,7 +60,7 @@
 					<div class="en">product</div>
 				</div>
 				<!--内容-->
-				<div class="main-con" style="height: 1000px;">
+				<div class="main-con">
 					<div class="carousel-item">
 						<div id="carousel">
 						 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
@@ -74,24 +74,35 @@
 						 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
 						</div>
 						<div id="buttons">
-						 	<button class="left">←</button>
-							<button class="right">→</button>
+						 	<div class="left"></div>
+							<div class="right"></div>
 						</div>
 					</div>
-					<ul class="img-item">
-						<li>
-							<img src="../../assets/image/index/pro.png" alt="" />
-						</li>
-						<li>
-							<img src="../../assets/image/index/pro.png" alt="" />
-						</li>
-						<li>
-							<img src="../../assets/image/index/pro.png" alt="" />
-						</li>
-						<li>
-							<img src="../../assets/image/index/pro.png" alt="" />
-						</li>
-					</ul>
+					<div class="swiper-item">
+						<!-- Swiper -->
+					  	<div class="swiper-container">
+					    	<div class="swiper-wrapper">
+					      		<div class="swiper-slide">
+					      			<div class="swiper-img"><img src="../../assets/image/index/pro.png"/></div>
+					      			<div class="swiper-tlt">新琥珀</div>
+					      		</div>
+					      		<div class="swiper-slide">
+					      			<div class="swiper-img"><img src="../../assets/image/index/pro.png"/></div>
+					      			<div class="swiper-tlt">新琥珀</div>
+					      		</div>
+					      		<div class="swiper-slide">
+					      			<div class="swiper-img"><img src="../../assets/image/index/pro.png"/></div>
+					      			<div class="swiper-tlt">新琥珀</div>
+					      		</div>
+					      		<div class="swiper-slide">
+					      			<div class="swiper-img"><img src="../../assets/image/index/pro.png"/></div>
+					      			<div class="swiper-tlt">新琥珀</div>
+					      		</div>
+					    	</div>
+					  	</div>
+					  	<!-- Add Pagination -->
+					   	<div class="swiper-pagination"></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -104,8 +115,8 @@
     
     <style type="text/css">
     	.common-nav .nav-list .list-nav > li.li-home > a {
-			background-color: #323232;
-			color: #fff;
+			/*background-color: #323232;
+			color: #fff;*/
 		}
     </style>   
     <!--插件：static文件夹-->
@@ -143,13 +154,22 @@
 	  	})        
 	</script>
 	<script>
-$("#carousel").Cloud9Carousel( {
- buttonLeft:$("#buttons>.left"),
- buttonRight:$("#buttons>.right"),
-// autoPlay:1,
- bringToFront:true
-}
-);
+		$("#carousel").Cloud9Carousel( {
+		 	buttonLeft:$("#buttons>.left"),
+	 		buttonRight:$("#buttons>.right"),
+			// autoPlay:1,
+	 		bringToFront:true
+		});
+	</script>
+	<script>
+		var swiper = new Swiper('.swiper-item .swiper-container', {
+	      	slidesPerView: 2,
+	      	spaceBetween: 20,
+	      	pagination: {
+	        	el: '.swiper-pagination',
+	        	clickable: true,
+	      	},
+	    });
 	</script>
 </body>
 </html>
