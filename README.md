@@ -1,2 +1,2 @@
 # Teaching
-https://lynachen.github.io/Teaching/template/Index/index.html
+https://lynachen.github.io/Boulder/template/Index/index.html
