@@ -12,10 +12,10 @@ $(function(){
 	$("#footer").load("../../template/Common/common.html .common-footer");
 })
 //滚动时页头固定
-$(window).on("scroll",function(){
-	if($(window).scrollTop() == 0){
-		$(".common-header").removeClass("fixed");
-	} else{
-		$(".common-header").addClass("fixed");
-	}
-})
+//$(window).on("scroll",function(){
+//	if($(window).scrollTop() == 0){
+//		$(".common-header").removeClass("fixed");
+//	} else{
+//		$(".common-header").addClass("fixed");
+//	}
+//})
