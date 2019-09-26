@@ -1,11 +1,17 @@
 /*---- banner ----*/
 .swiper-banner {
 	position: relative;
+	margin-top: 76px;
+}
+@media (max-width: 768px){
+	.swiper-banner {
+		margin-top: 0;
+	}	
 }
 /*banner图片部分*/
 .swiper-banner .swiper-wrapper .swiper-slide {
 	width: 100%;
-	height: 500px;
+	height: 1080px;
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
@@ -197,16 +203,17 @@
 	right:808px;
 	background:url(../../assets/image/indexright.png) no-repeat;
 }
+.carousel-item {
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
 .cloud9-item {
 	width: 202px;
 	opacity: .6;
 }
 .cloud9-item.on {
 	opacity: 1;
-}
-.carousel-item {
-	height: 700px;
-	position: relative;
 }
 .carousel-item #buttons > div {
 	position: absolute;

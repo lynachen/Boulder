@@ -114,11 +114,17 @@
     
     <style type="text/css">
     	.common-nav .nav-list .list-nav > li.li-home > a {
-			color: #ff7e00;
+			color: #393630;
 		}
-		.common-nav .nav-list .list-nav > li.li-home > a {
+		.common-nav .nav-list .list-nav > li.li-home > a:before {
 			left: 25%;
 			right: 25%;
+		}
+		@media (max-width: 767px) {
+			.common-nav .nav-list .list-nav > li.li-home > a:before {
+				left: auto;
+				right: auto;
+			}
 		}
     </style> 
     
