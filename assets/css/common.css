@@ -683,6 +683,7 @@ label {margin-bottom: 0;font-weight: 500;}
 	-ms-transition: all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;	
+	z-index: 999;
 	display: none;
 }
 .footer-top .ico-item li:hover .ico-qr {

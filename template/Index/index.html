@@ -79,7 +79,7 @@
 					</div>
 					<div class="swiper-item">
 						<!-- Swiper -->
-					  	<div class="swiper-container">
+					  	<div class="swiper-container swiper-pro">
 					    	<div class="swiper-wrapper">
 					      		<div class="swiper-slide">
 					      			<div class="swiper-img"><img src="../../assets/image/index/pro.png"/></div>
@@ -131,8 +131,8 @@
     <!--插件：static文件夹-->
 	<script src="../../assets/static/jquery-2.1.4/jquery.min.js"></script>
 	<script src="../../assets/static/bootstrap-3.3.7/js/bootstrap.js"></script>
-	<script src="../../assets/static/swiper-4.3.3/swiper.min.js"></script>
 	<script src="../../assets/static/cloud9carousel/jquery.cloud9carousel.js"></script>
+	<script src="../../assets/static/swiper-4.3.3/swiper.min.js"></script>	
 	<!--自定义js-->
 	<script src="../../assets/js/common.js"></script> <!--公共js部分-->
 	<script src="../../assets/js/index.js"></script>	 <!--本页js-->
@@ -146,36 +146,25 @@
 		    
 		    // 如果需要分页器
 		    pagination: {
-		      el: '.swiper-pagination',
+		      el: '.swiper-banner .swiper-pagination',
 		      clickable: true,
-		    },
-		    
-		    // 如果需要前进后退按钮
-		    navigation: {
-		      nextEl: '.swiper-button-next',
-		      prevEl: '.swiper-button-prev',
-		    },
-		    
-		    // 如果需要滚动条
-		    scrollbar: {
-		      el: '.swiper-scrollbar',
 		    },
 	  	})        
 	</script>
 	<script>
-		$("#carousel").Cloud9Carousel( {
-		 	buttonLeft:$("#buttons>.left"),
-	 		buttonRight:$("#buttons>.right"),
+		$('#carousel').Cloud9Carousel({
+		 	buttonLeft:$('#buttons > .left'),
+	 		buttonRight:$('#buttons > .right'),
 			autoPlay:1,
 	 		bringToFront:true
 		});
 	</script>
 	<script>
-		var swiper = new Swiper('.swiper-item .swiper-container', {
+		var swiper = new Swiper('.swiper-pro', {
 	      	slidesPerView: 2,
 	      	spaceBetween: 20,
 	      	pagination: {
-	        	el: '.swiper-pagination',
+	        	el: '.swiper-item .swiper-pagination',
 	        	clickable: true,
 	      	},
 	    });
