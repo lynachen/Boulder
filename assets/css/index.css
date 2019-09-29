@@ -15,11 +15,91 @@
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
+	position: relative;
+}
+/*banner文案部分*/
+.swiper-slide .container {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: 2;
+}
+.swiper-slide .container .swiper-copy {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 0;
+}
+.swiper-slide .container .swiper-copy .swiper-tlt p {
+	font-size: 32px;
+	color: #000;
+}
+.swiper-slide .container .swiper-copy .swiper-txt {
+	margin: 20px 0;
+}
+.swiper-slide .container .swiper-copy .swiper-txt p {
+	font-size: 20px;
+	color: #666;
+}
+.swiper-banner .swiper-btn {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.swiper-banner .btns {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	margin-top: 120px;
+}
+.swiper-banner .swiper-btn .btns a {
+	display: inline-block;
+	font-size: 14px;
+	padding: 4px 10px;
+	border: 1px solid #000;
+	background-color: #fff;
+	border-radius: 20px;
+	color: #000;
+}
+.swiper-banner .swiper-btn .btns a:hover,
+.swiper-banner .swiper-btn .btns a.on {
+	background-color: #000;
+	color: #fff;
+}
+.swiper-banner .swiper-btn .btns a.jd {
+	margin-left: 10px;
 }
 @media (max-width: 768px){
 	.swiper-banner .swiper-wrapper .swiper-slide {
 	    height: 200px;
 	}	
+}
+.swiper-banner .swiper-pagination {
+	text-align: right;
+	left: auto;
+	right: 6%;
 }
 .swiper-banner .swiper-pagination-bullet {
 	width: 10px;
@@ -40,56 +120,12 @@
 .swiper-banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
     border: 2px solid #ccc;
 }
-/*banner文案部分*/
-.swiper-banner .container {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
-	z-index: 2;
-}
-.swiper-banner .swiper-copy {
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	left: 0;
-}
-.swiper-banner .swiper-copy .swiper-tlt p {
-	font-size: 32px;
-	color: #000;
-}
-.swiper-banner .swiper-copy .swiper-txt {
-	margin: 20px 0;
-}
-.swiper-banner .swiper-copy .swiper-txt p {
-	font-size: 20px;
-	color: #666;
-}
-.swiper-banner .swiper-copy .swiper-btns a {
-	display: inline-block;
-	font-size: 14px;
-	padding: 4px 10px;
-	border: 1px solid #000;
-	background-color: #fff;
-	border-radius: 20px;
-	color: #000;
-}
-.swiper-banner .swiper-copy .swiper-btns a:hover,
-.swiper-banner .swiper-copy .swiper-btns a.on {
-	background-color: #000;
-	color: #fff;
-}
-.swiper-banner .swiper-copy .swiper-btns a.jd {
-	margin-left: 10px;
+@media (max-width: 768px){
+	.swiper-banner .swiper-pagination {
+	    text-align: center;
+	    left: auto;
+	    right: auto;
+	}	
 }
 @media (max-width: 768px){
 	.swiper-banner .container {
@@ -104,7 +140,7 @@
 			transform: initial;
 		    z-index: 1;
 	}
-	.swiper-banner .swiper-copy	{
+	.swiper-slide .swiper-copy	{
 		position: relative;
 		top: auto;
 		-webkit-transform: initial;
@@ -115,22 +151,22 @@
 		left: auto;
 		background-color: rgba(237,237,237,1);
 	}
-	.swiper-banner .swiper-copy .swiper-tlt {
+	.swiper-slide .swiper-copy .swiper-tlt {
 		padding: 20px 10%;
 	}
-	.swiper-banner .swiper-copy .swiper-tlt p {
+	.swiper-slide .swiper-copy .swiper-tlt p {
 		font-size: 20px;
 	}
-	.swiper-banner .swiper-copy .swiper-txt {
+	.swiper-slide .swiper-copy .swiper-txt {
 		margin: 20px 10%;
 	}
-	.swiper-banner .swiper-copy .swiper-txt p {
+	.swiper-slide .swiper-copy .swiper-txt p {
 		font-size: 14px;
 	}
-	.swiper-banner .swiper-copy .swiper-btns a {
+	.swiper-banner .swiper-btn .btns a {
 		font-size: 12px;
 	}
-	.swiper-banner .swiper-copy .swiper-btns {
+	.swiper-banner .swiper-btn {
 	    padding: 20px;
 	    background: linear-gradient(180deg,rgba(238,238,238,0) 0%,rgba(231,231,231,0.84) 24%,rgba(226,226,226,1) 54%,rgba(221,221,221,0.94) 81%,rgba(216,216,216,0) 100%);
 	    text-align: center;
