@@ -2,6 +2,8 @@
 .swiper-banner {
 	position: relative;
 	margin-top: 76px;
+	height: auto;
+	overflow: hidden;
 }
 @media (max-width: 768px){
 	.swiper-banner {
@@ -11,11 +13,25 @@
 /*banner图片部分*/
 .swiper-banner .swiper-wrapper .swiper-slide {
 	width: 100%;
-	height: 1080px;
-	background-repeat: no-repeat;
+	/*height: 1080px;*/
+	/*background-repeat: no-repeat;
 	background-position: top center;
-	background-size: cover;
+	background-size: cover;*/
+	height: auto;
+	overflow: hidden;
 	position: relative;
+}
+.swiper-banner .swiper-wrapper .swiper-slide .banner-img {
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow: hidden;	
+}
+.swiper-banner .swiper-wrapper .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
 }
 /*banner文案部分*/
 .swiper-slide .container {
@@ -30,7 +46,7 @@
 	transform: translateX(-50%);
 	z-index: 2;
 }
-.swiper-slide .container .swiper-copy {
+.swiper-slide .container .banner-cont {
 	position: absolute;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -40,14 +56,14 @@
 	transform: translateY(-50%);
 	left: 0;
 }
-.swiper-slide .container .swiper-copy .swiper-tlt p {
+.swiper-slide .container .banner-cont .swiper-tlt p {
 	font-size: 32px;
 	color: #000;
 }
-.swiper-slide .container .swiper-copy .swiper-txt {
+.swiper-slide .container .banner-cont .swiper-txt {
 	margin: 20px 0;
 }
-.swiper-slide .container .swiper-copy .swiper-txt p {
+.swiper-slide .container .banner-cont .swiper-txt p {
 	font-size: 20px;
 	color: #666;
 }
@@ -140,7 +156,7 @@
 			transform: initial;
 		    z-index: 1;
 	}
-	.swiper-slide .swiper-copy	{
+	.swiper-slide .banner-cont	{
 		position: relative;
 		top: auto;
 		-webkit-transform: initial;
@@ -151,16 +167,16 @@
 		left: auto;
 		background-color: rgba(237,237,237,1);
 	}
-	.swiper-slide .swiper-copy .swiper-tlt {
+	.swiper-slide .banner-cont .swiper-tlt {
 		padding: 20px 10%;
 	}
-	.swiper-slide .swiper-copy .swiper-tlt p {
+	.swiper-slide .banner-cont .swiper-tlt p {
 		font-size: 20px;
 	}
-	.swiper-slide .swiper-copy .swiper-txt {
+	.swiper-slide .banner-cont .swiper-txt {
 		margin: 20px 10%;
 	}
-	.swiper-slide .swiper-copy .swiper-txt p {
+	.swiper-slide .banner-cont .swiper-txt p {
 		font-size: 14px;
 	}
 	.swiper-banner .swiper-btn .btns a {
