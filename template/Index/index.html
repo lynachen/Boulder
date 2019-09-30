@@ -102,16 +102,43 @@
 				<!--内容-->
 				<div class="main-con">
 					<div class="carousel-item">
-						<div id="carousel">
-						 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
-						 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
-						 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
-						 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
-						 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
-						 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
-						 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
-						 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
-						 	<img class="cloud9-item" src="../../assets/image/index/pro.png">
+						<div id="showcase">
+							<div class="carousel-card">
+								<img class="cloud9-item" src="../../assets/image/index/pro.png">
+								<p>琥珀</p>
+							</div>
+						 	<div class="carousel-card">
+								<img class="cloud9-item" src="../../assets/image/index/pro.png">
+								<p>琥珀</p>
+							</div>
+							<div class="carousel-card">
+								<img class="cloud9-item" src="../../assets/image/index/pro.png">
+								<p>琥珀</p>
+							</div>
+							<div class="carousel-card">
+								<img class="cloud9-item" src="../../assets/image/index/pro.png">
+								<p>琥珀</p>
+							</div>
+							<div class="carousel-card">
+								<img class="cloud9-item" src="../../assets/image/index/pro.png">
+								<p>琥珀</p>
+							</div>
+							<div class="carousel-card">
+								<img class="cloud9-item" src="../../assets/image/index/pro.png">
+								<p>琥珀</p>
+							</div>
+							<div class="carousel-card">
+								<img class="cloud9-item" src="../../assets/image/index/pro.png">
+								<p>琥珀</p>
+							</div>
+							<div class="carousel-card">
+								<img class="cloud9-item" src="../../assets/image/index/pro.png">
+								<p>琥珀</p>
+							</div>
+							<div class="carousel-card">
+								<img class="cloud9-item" src="../../assets/image/index/pro.png">
+								<p>琥珀</p>
+							</div>
 						</div>
 						<div id="buttons">
 						 	<div class="left"></div>
@@ -162,12 +189,11 @@
 		    -moz-transform: scaleX(1);
 		    transform: scaleX(1)
 		}
-		/*@media (max-width: 767px) {
-			.common-nav .nav-list .list-nav > li.li-home > a:before {
-				left: auto;
-				right: auto;
+		@media (max-width: 767px) {
+			.common-nav .nav-list .list-nav > li.li-home .hvr-underline-from-left:after {
+				display: none;
 			}
-		}*/
+		}
     </style> 
     
     <!--插件：static文件夹-->
@@ -193,14 +219,64 @@
 		    },
 	  	})        
 	</script>
-	<script>
+	<!--<script>
 		$('#carousel').Cloud9Carousel({
 		 	buttonLeft:$('#buttons > .left'),
 	 		buttonRight:$('#buttons > .right'),
 			autoPlay:1,
 	 		bringToFront:true
 		});
-	</script>
+	</script>-->
+<script>
+    $(function() {
+      	var showcase = $("#showcase")
+      	showcase.Cloud9Carousel({
+	        yOrigin: 42,
+	        yRadius: 40,
+	        itemClass: "carousel-card",
+	        buttonLeft: $('#buttons > .left'),
+	        buttonRight: $('#buttons > .right'),
+	        bringToFront: true,
+	        onLoaded: function() {
+	          showcase.css( 'visibility', 'visible' )
+	          showcase.css( 'display', 'none' )
+	          showcase.fadeIn( 1500 )
+	        }
+      	})
+		
+      //
+      // Simulate physical button click effect
+      //
+//    $('.nav').click( function( e ) {
+//      var b = $(e.target).addClass( 'down' )
+//      setTimeout( function() { b.removeClass( 'down' ) }, 80 )
+//    } )
+      
+
+//    $(document).keydown( function( e ) {
+//      //
+//      // More codes: http://www.javascripter.net/faq/keycodes.htm
+//      //
+//      switch( e.keyCode ) {
+//        /* left arrow */
+//        case 37:
+//          $('.nav.left').click()
+//          break
+//
+//        /* right arrow */
+//        case 39:
+//          $('.nav.right').click()
+//      }
+//    } )
+    })
+    setTimeout(function(){
+//		$('.carousel-item .carousel-card.on').next().css('opacity',1)
+//		$('.carousel-item .carousel-card.on').next().next().css('opacity',1)
+//		$('.carousel-item .carousel-card.on').next().next().next().css('opacity',1)
+//		$('.carousel-item .carousel-card.on').next().css('opacity',1)
+//		$('.carousel-item .carousel-card.on').next().css('opacity',1)
+  	},100)
+  </script>
 	<script>
 		var swiper = new Swiper('.swiper-pro', {
 	      	slidesPerView: 2,

@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 /*---- banner ----*/
 .swiper-banner {
 	position: relative;
@@ -182,7 +185,7 @@
 	.swiper-banner .swiper-btn .btns a {
 		font-size: 12px;
 	}
-	.swiper-banner .swiper-btn {
+	.swiper-banner .swiper-btn .btns {
 	    padding: 20px;
 	    background: linear-gradient(180deg,rgba(238,238,238,0) 0%,rgba(231,231,231,0.84) 24%,rgba(226,226,226,1) 54%,rgba(221,221,221,0.94) 81%,rgba(216,216,216,0) 100%);
 	    text-align: center;
@@ -215,25 +218,37 @@
 		font-size: 14px;
 	}	
 }
-
-.slider_circle_10 .active {
-	top: 50%;
-}
+/*产品中心*/
 .carousel-item {
 	width: 100%;
-	height: 600px;
 	position: relative;
 }
-.cloud9-item {
-	width: 202px;
-	opacity: .6;
+#showcase {
+	width: 100%;
+	height: 600px;
+	overflow: visible !important;
+	position: relative;	
 }
-.cloud9-item.on {
+.carousel-item .carousel-card {
+	width: 200px;
+	text-align: center;
+	background-color: #eee;
+}
+.carousel-item .carousel-card img {
+	opacity: .6;
+	max-width: 100%;
+	max-height: 100%;
+}
+.carousel-item .carousel-card.on img {
 	opacity: 1;
 }
+.carousel-item .carousel-card p {
+	font-size: 18px;
+	color: #333;
+}
 @media (min-width: 768px) and (max-width: 991px) {
-	.cloud9-item {
-		width: 160px;
+	.carousel-item .carousel-card {
+		width: 150px;
 	}
 }
 .carousel-item #buttons > div {
