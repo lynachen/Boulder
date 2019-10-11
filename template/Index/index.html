@@ -229,7 +229,7 @@
 		//banner
 	  	var mySwiper = new Swiper ('.swiper-banner', {
 	  		direction : 'horizontal',
-//	  		autoplay: true,//可选选项，自动滑动
+	  		autoplay: true,//可选选项，自动滑动
 		    loop: true, // 循环模式选项
 		    
 		    // 如果需要分页器
@@ -239,64 +239,63 @@
 		    },
 	  	})        
 	</script>
-	<!--<script>
-		$('#carousel').Cloud9Carousel({
-		 	buttonLeft:$('#buttons > .left'),
-	 		buttonRight:$('#buttons > .right'),
-			autoPlay:1,
-	 		bringToFront:true
-		});
-	</script>-->
-<script>
-    $(function() {
-      	var showcase = $("#showcase")
-      	showcase.Cloud9Carousel({
-	        yOrigin: 42,
-	        yRadius: 40,
-	        itemClass: "carousel-card",
-	        buttonLeft: $('#buttons > .left'),
-	        buttonRight: $('#buttons > .right'),
-	        bringToFront: true,
-	        onLoaded: function() {
-	          showcase.css( 'visibility', 'visible' )
-	          showcase.css( 'display', 'none' )
-	          showcase.fadeIn( 1500 )
-	        }
-      	})
-		
-      //
-      // Simulate physical button click effect
-      //
-//    $('.nav').click( function( e ) {
-//      var b = $(e.target).addClass( 'down' )
-//      setTimeout( function() { b.removeClass( 'down' ) }, 80 )
-//    } )
-      
-
-//    $(document).keydown( function( e ) {
-//      //
-//      // More codes: http://www.javascripter.net/faq/keycodes.htm
-//      //
-//      switch( e.keyCode ) {
-//        /* left arrow */
-//        case 37:
-//          $('.nav.left').click()
-//          break
-//
-//        /* right arrow */
-//        case 39:
-//          $('.nav.right').click()
-//      }
-//    } )
-    })
-    setTimeout(function(){
-//		$('.carousel-item .carousel-card.on').next().css('opacity',1)
-//		$('.carousel-item .carousel-card.on').next().next().css('opacity',1)
-//		$('.carousel-item .carousel-card.on').next().next().next().css('opacity',1)
-//		$('.carousel-item .carousel-card.on').next().css('opacity',1)
-//		$('.carousel-item .carousel-card.on').next().css('opacity',1)
-  	},100)
-  </script>
+	<script>
+	    $(function() {
+	      	var showcase = $("#showcase")
+	      	showcase.Cloud9Carousel({
+		        yOrigin: 42,
+		        yRadius: 40,
+		        itemClass: "carousel-card",
+		        buttonLeft: $('#buttons > .left'),
+		        buttonRight: $('#buttons > .right'),
+		        bringToFront: true,
+		        onLoaded: function() {
+		          showcase.css( 'visibility', 'visible' )
+		          showcase.css( 'display', 'none' )
+		          showcase.fadeIn( 1500 )
+		        }
+	      	})
+			
+	      //
+	      // Simulate physical button click effect
+	      //
+	//    $('.nav').click( function( e ) {
+	//      var b = $(e.target).addClass( 'down' )
+	//      setTimeout( function() { b.removeClass( 'down' ) }, 80 )
+	//    } )
+	      
+	
+	//    $(document).keydown( function( e ) {
+	//      //
+	//      // More codes: http://www.javascripter.net/faq/keycodes.htm
+	//      //
+	//      switch( e.keyCode ) {
+	//        /* left arrow */
+	//        case 37:
+	//          $('.nav.left').click()
+	//          break
+	//
+	//        /* right arrow */
+	//        case 39:
+	//          $('.nav.right').click()
+	//      }
+	//    } )
+	    })
+	    setTimeout(function(){
+	    	if($('.carousel-item .carousel-card').hasClass('on')){
+	//  		$('.carousel-item .carousel-card').next().find('img').css('opacity',1)
+	//  		$('.carousel-item .carousel-card').next().next().find('img').css('opacity',1)
+	//  		$('.carousel-item .carousel-card').prev().find('img').css('opacity',1)
+	//  		$('.carousel-item .carousel-card').prev().prev().find('img').css('opacity',1)
+	    	}
+	//  	$($('.carousel-item .carousel-card').hasClass('on')).next().find('img').css('opacity',1)
+	//		$('.carousel-item .carousel-card.on').next().find('img').css('opacity',1)
+	//		$('.carousel-item .carousel-card.on').next().next().find('img').css('opacity',1)
+	//		$('.carousel-item .carousel-card.on').next().next().next().find('img').css('opacity',1)
+	//		$('.carousel-item .carousel-card.on').next().css('opacity',1)
+	//		$('.carousel-item .carousel-card.on').next().css('opacity',1)
+	  	},100)
+  	</script>
 	<script>
 		var swiper = new Swiper('.swiper-pro', {
 	      	slidesPerView: 2,
