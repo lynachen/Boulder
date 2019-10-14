@@ -273,19 +273,6 @@ body {
 		height: 700px;
 	}
 }
-@media (min-width: 768px) and (max-width: 991px) {
-	.carousel-item .carousel-card {
-		/*width: 150px;*/
-	}
-	/*#showcase {
-		height: 786px;
-		overflow: visible !important;
-		position: relative;	
-		display: flex;
-		align-items: center;
-		margin-bottom: 40px;
-	}*/
-}
 .carousel-item #buttons > div {
 	position: absolute;
 	top: 50%;
@@ -311,7 +298,7 @@ body {
 .swiper-item {
 	display: none;
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
 	.carousel-item {
 	    display: none;
 	}	
