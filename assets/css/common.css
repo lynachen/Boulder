@@ -53,6 +53,7 @@ fieldset,img {
 }
 
 img,object {
+	display: inline-block;
     vertical-align: middle;
 }
 

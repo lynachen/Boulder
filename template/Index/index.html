@@ -101,6 +101,7 @@
 				</div>
 				<!--内容-->
 				<div class="main-con">
+					<!--PC端产品显示 start-->
 					<div class="carousel-item">
 						<div id="showcase">
 							<div class="carousel-card">
@@ -157,6 +158,9 @@
 							<div class="right"></div>
 						</div>
 					</div>
+					<!--PC端产品显示 end-->
+					
+					<!--移动端产品显示 start-->
 					<div class="swiper-item">
 						<!-- Swiper -->
 					  	<div class="swiper-container swiper-pro">
@@ -202,6 +206,7 @@
 					  	<!-- Add Pagination -->
 					   	<div class="swiper-pagination"></div>
 					</div>
+					<!--移动端产品显示 end-->
 				</div>
 			<!--</div>-->
 		</div>
@@ -252,6 +257,7 @@
 	  	})        
 	</script>
 	<script>
+//		PC端产品显示
 	    $(function() {
 	      	var showcase = $("#showcase")
 	      	showcase.Cloud9Carousel({
@@ -268,22 +274,13 @@
 		        }
 	      	})
 	    })
-	    setTimeout(function(){
-	    	if($('.carousel-item .carousel-card').hasClass('on')){
-	//  		$('.carousel-item .carousel-card').next().find('img').css('opacity',1)
-	//  		$('.carousel-item .carousel-card').next().next().find('img').css('opacity',1)
-	//  		$('.carousel-item .carousel-card').prev().find('img').css('opacity',1)
-	//  		$('.carousel-item .carousel-card').prev().prev().find('img').css('opacity',1)
-	    	}
-	//  	$($('.carousel-item .carousel-card').hasClass('on')).next().find('img').css('opacity',1)
-	//		$('.carousel-item .carousel-card.on').next().find('img').css('opacity',1)
-	//		$('.carousel-item .carousel-card.on').next().next().find('img').css('opacity',1)
-	//		$('.carousel-item .carousel-card.on').next().next().next().find('img').css('opacity',1)
-	//		$('.carousel-item .carousel-card.on').next().css('opacity',1)
-	//		$('.carousel-item .carousel-card.on').next().css('opacity',1)
-	  	},100)
+//	    setTimeout(function(){
+//	    	if($('.carousel-item .carousel-card').hasClass('on')){
+//
+//	  	},100)
   	</script>
 	<script>
+//		移动端产品显示
 		var swiper = new Swiper('.swiper-pro', {
 	      	slidesPerView: 2,
 	      	spaceBetween: 20,
