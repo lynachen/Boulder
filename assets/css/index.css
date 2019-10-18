@@ -4,22 +4,12 @@ body {
 /*---- banner ----*/
 .swiper-banner {
 	position: relative;
-	margin-top: 76px;
 	height: auto;
 	overflow: hidden;
-}
-@media (max-width: 768px){
-	.swiper-banner {
-		margin-top: 0;
-	}	
 }
 /*banner图片部分*/
 .swiper-banner .swiper-wrapper .swiper-slide {
 	width: 100%;
-	/*height: 1080px;*/
-	/*background-repeat: no-repeat;
-	background-position: top center;
-	background-size: cover;*/
 	height: auto;
 	overflow: hidden;
 	position: relative;
@@ -70,6 +60,7 @@ body {
 	font-size: 20px;
 	color: #666;
 }
+/*banner按钮*/
 .swiper-banner .swiper-btn {
 	position: absolute;
 	height: 100%;
@@ -110,11 +101,6 @@ body {
 .swiper-banner .swiper-btn .btns a.jd {
 	margin-left: 10px;
 }
-@media (max-width: 768px){
-	.swiper-banner .swiper-wrapper .swiper-slide {
-	    height: 200px;
-	}	
-}
 .swiper-banner .swiper-pagination {
 	text-align: right;
 	left: auto;
@@ -139,6 +125,7 @@ body {
 .swiper-banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
     border: 2px solid #ccc;
 }
+/*banner移动端展示*/
 @media (max-width: 768px){
 	.swiper-banner .swiper-pagination {
 	    text-align: center;
@@ -147,50 +134,50 @@ body {
 	}	
 }
 @media (max-width: 768px){
-	.swiper-banner .container {
-		    position: relative;
-		    height: 100%;
-		    top: auto;
-		    left: auto;
-			-webkit-transform: initial;
-			-moz-transform: initial;
-			-ms-transform: initial;
-			-o-transform: initial;
-			transform: initial;
-		    z-index: 1;
+	.swiper-slide .container {
+		width: 95%;
+    	margin: 0 5%;
 	}
-	.swiper-slide .banner-cont	{
-		position: relative;
-		top: auto;
-		-webkit-transform: initial;
-		-moz-transform: initial;
-		-ms-transform: initial;
-		-o-transform: initial;
-		transform: initial;
-		left: auto;
-		background-color: rgba(237,237,237,1);
+	.swiper-slide .container .banner-cont {
+		top: 10%;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
 	}
-	.swiper-slide .banner-cont .swiper-tlt {
-		padding: 20px 10%;
-	}
-	.swiper-slide .banner-cont .swiper-tlt p {
-		font-size: 20px;
+	.swiper-slide .container .banner-cont .swiper-tlt p {
+		font-size: 18px;
 	}
 	.swiper-slide .banner-cont .swiper-txt {
 		margin: 20px 10%;
 	}
-	.swiper-slide .banner-cont .swiper-txt p {
+	.swiper-slide .container .banner-cont .swiper-txt p {
 		font-size: 14px;
 	}
 	.swiper-banner .swiper-btn .btns a {
 		font-size: 12px;
 	}
 	.swiper-banner .swiper-btn .btns {
-	    padding: 20px;
-	    background: linear-gradient(180deg,rgba(238,238,238,0) 0%,rgba(231,231,231,0.84) 24%,rgba(226,226,226,1) 54%,rgba(221,221,221,0.94) 81%,rgba(216,216,216,0) 100%);
-	    text-align: center;
+
+	}
+	.swiper-banner .swiper-btn {
+		width: 100%;
+		text-align: center;
+	}
+	.swiper-banner .btns {
+		bottom: 34px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+		top: auto;
+		margin-top: 0;
 	}
 }
+/*标题部分*/
 .main-bg .main-tlt {
 	text-align: center;
 	margin-top: 70px;

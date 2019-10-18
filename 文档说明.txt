@@ -6,4 +6,7 @@ template：模板文件
 
 公共部分--Common/common
 首页--Index/index
-核心技术--CoreTech/coreTech
+核心技术--Tech/tech
+代理加盟--Join/join
+铂德资讯--News/news
+关于我们--About/about
