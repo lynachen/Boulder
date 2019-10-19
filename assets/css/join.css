@@ -1,0 +1,124 @@
+body {background-color: #fff;}
+.common-header {
+	position: relative;
+}
+/*banner及标题*/
+.banner {
+	width: 100%;
+	height: 360px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	position: relative;
+}
+.banner .banner-layer {
+	background-color: rgb(0,0,0,.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.banner .banner-layer .cn {
+    font-size: 48px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 10px;
+}
+.banner .banner-layer .en {
+	font-size: 34px;
+	color: #fff;
+	text-transform:Uppercase;
+}
+@media (max-width: 768px){
+	.banner {
+		height: 240px;
+	}
+	.banner .banner-layer .cn {
+	    font-size: 32px;
+	}
+	.banner .banner-layer .en {
+		font-size: 20px;
+	}
+}
+/*内容部分*/
+.main-con {
+	display: flex;
+}
+.main-con > div {
+	flex: 1;
+}
+.con-left img {
+	width: 100%;
+	height: 100%;
+}
+.con-right .right-top {
+	position: relative;
+	width: 100%;
+	/*height: 80%;*/
+}
+.con-right .right-top .img {
+	width: 100%;
+	height: 100%;
+}
+.con-right .right-top .img img {
+	width: 100%;
+	height: 100%;
+}
+.con-right .right-top .txt {
+	position: absolute;
+	left: 10%;
+	top: 20%;
+}
+.con-right .right-top .txt p {
+	font-size: 56px;
+	font-weight: bold;
+	color: #223367;
+	line-height: 2;
+}
+.con-right .right-bot {
+	/*height: 20%;*/
+	padding: 20px 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.con-right .right-bot .tlt {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+.con-right .right-bot p {
+	font-size: 22px;
+	line-height: 1.8;
+}
+@media (max-width: 768px){
+	.main-con {
+		display: block;
+	}
+	.con-right .right-top .txt p {
+		font-size: 30px;
+	}
+	.con-right .right-bot .tlt {
+		font-size: 22px;
+		margin-bottom: 10px;
+	}	
+	.con-right .right-bot p {
+		font-size: 14px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.con-right .right-top .txt p {
+		font-size: 38px;
+	}
+	.con-right .right-bot .tlt {
+		font-size: 28px;
+		margin-bottom: 10px;
+	}	
+	.con-right .right-bot p {
+		font-size: 18px;
+	}
+}

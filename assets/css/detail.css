@@ -1,0 +1,122 @@
+body {background-color: #fff;}
+.common-header {
+	position: relative;
+}
+/*banner及标题*/
+.banner {
+	width: 100%;
+	height: 360px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	position: relative;
+}
+.banner .banner-layer {
+	background-color: rgb(0,0,0,.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.banner .banner-layer .cn {
+    font-size: 48px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 10px;
+}
+.banner .banner-layer .en {
+	font-size: 34px;
+	color: #fff;
+	text-transform:Uppercase;
+}
+@media (max-width: 768px){
+	.banner {
+		height: 240px;
+	}
+	.banner .banner-layer .cn {
+	    font-size: 32px;
+	}
+	.banner .banner-layer .en {
+		font-size: 20px;
+	}
+}
+/*内容部分*/
+/*新闻标题*/
+.main-tlt {
+	text-align: center;
+	padding: 30px 0;
+	border-bottom: 1px dashed #ccc;
+}
+.main-tlt .tlt {
+	font-size: 24PX;
+	color: #333;
+}
+.main-tlt .sub-tlt {
+	margin-top: 15px;
+	font-size: 14px;
+	color: #999;
+}
+.main-tlt .sub-tlt span {
+	margin-right: 15px;
+}
+.main-tlt .sub-tlt span:last-child {
+	margin-right: 0;
+}
+/*新闻内容*/
+.main-con {
+	padding: 20px 0;
+}
+.main-con img {
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
+}
+.main-con div,
+.main-con p,
+.main-con span {
+	font-size: 14px;
+	color: #333;
+	line-height: 1.8;
+}
+/*新闻标题索引*/
+.main-subject {
+	padding: 30px 0;
+	border-top: 1px dashed #ccc;
+}
+.subject-item span {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 14px;
+	color: #1a1a1a;
+	line-height: 1.8;
+}
+.subject-item span a {
+	color: #666;
+}
+.subject-item span:hover a {
+	color: #223367;
+}
+@media (max-width: 768px){
+	.main-tlt,
+	.main-con,
+	.main-subject {
+	   	padding-left: 20px;
+	   	padding-right: 20px;
+	}
+	.main-tlt .tlt {
+		font-size: 18px;
+	}
+	.main-tlt .sub-tlt {
+		font-size: 12px;
+	}
+	.main-subject {
+		display: none;
+	}
+}
