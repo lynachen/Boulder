@@ -9,4 +9,5 @@ template：模板文件
 核心技术--Tech/tech
 代理加盟--Join/join
 铂德资讯--News/news
+资讯详情--Detail/detail
 关于我们--About/about
