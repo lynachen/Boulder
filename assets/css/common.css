@@ -409,6 +409,10 @@ label {margin-bottom: 0;font-weight: 500;}
 @media (max-width: 768px){
 	.common-nav .nav-list {
 		float: inherit;
+		position: absolute;
+		width: 100%;
+		z-index: 999;
+		box-shadow: rgba(0,0,0,0.1) 0px 20px 60px -10px;
 	}
 }
 .common-nav .nav-list .list-nav > li {
@@ -643,11 +647,11 @@ label {margin-bottom: 0;font-weight: 500;}
 }
 .footer-top .ico-item li .ico.ico-wx {
 	background-image: url(../../assets/image/common/wx.png);
-	-webkit-transition: all 0.3s ease 0s;
+	/*-webkit-transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-ms-transition: all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;*/
 }
 .footer-top .ico-item li .ico.ico-wx:hover {
 	background-image: url(../../assets/image/common/ico_wx.png);

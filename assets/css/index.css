@@ -131,9 +131,13 @@ body {
 	    text-align: center;
 	    left: auto;
 	    right: auto;
+	    bottom: 50px;
 	}	
 }
 @media (max-width: 768px){
+	.swiper-banner {
+		padding-bottom: 40px;
+	}
 	.swiper-slide .container {
 		width: 95%;
     	margin: 0 5%;
@@ -155,18 +159,12 @@ body {
 	.swiper-slide .container .banner-cont .swiper-txt p {
 		font-size: 14px;
 	}
-	.swiper-banner .swiper-btn .btns a {
-		font-size: 12px;
-	}
-	.swiper-banner .swiper-btn .btns {
-
-	}
 	.swiper-banner .swiper-btn {
 		width: 100%;
 		text-align: center;
 	}
-	.swiper-banner .btns {
-		bottom: 34px;
+	.swiper-banner .swiper-btn .btns {
+		bottom: 0;
 		left: 50%;
 		-webkit-transform: translateX(-50%);
 		-moz-transform: translateX(-50%);
@@ -175,6 +173,9 @@ body {
 		transform: translateX(-50%);
 		top: auto;
 		margin-top: 0;
+	}
+	.swiper-banner .swiper-btn .btns a {
+		font-size: 12px;
 	}
 }
 /*标题部分*/
