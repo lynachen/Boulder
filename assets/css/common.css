@@ -647,11 +647,11 @@ label {margin-bottom: 0;font-weight: 500;}
 }
 .footer-top .ico-item li .ico.ico-wx {
 	background-image: url(../../assets/image/common/wx.png);
-	/*-webkit-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-ms-transition: all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;*/
+	transition: all 0.3s ease 0s;
 }
 .footer-top .ico-item li .ico.ico-wx:hover {
 	background-image: url(../../assets/image/common/ico_wx.png);
