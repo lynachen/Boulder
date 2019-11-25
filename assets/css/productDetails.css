@@ -1,0 +1,45 @@
+body {background-color: #fff;}
+.common-header {
+	position: relative;
+}
+/*面包屑导航*/
+.breadcrumb {
+	background-color: #fff;
+	margin: 20px 0;
+}
+
+.breadcrumb li {
+    font-size: 14px;
+    padding: 2px 14px;
+    border: 1px dashed #ccc;
+    position: relative;
+}
+.breadcrumb li:not(:first-child) {
+	margin-left: 30px;
+}
+.breadcrumb>li+li:before {
+	content: ">";
+	color: #666;
+	position: absolute;
+	left: -28px;
+}
+.breadcrumb li a,
+.breadcrumb>.active {
+    color: #666;
+}
+.breadcrumb li a:hover {
+	text-decoration: underline;
+}
+.main-img {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.main-img img {
+	max-width: 100%;
+	margin: 0 auto;
+}
+@media (max-width: 768px){
+	.main-img {
+		margin: 0 20px 30px;
+	}
+}
