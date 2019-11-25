@@ -27,6 +27,9 @@ body {background-color: #fff;}
 .breadcrumb>.active {
     color: #666;
 }
+.breadcrumb>.active {
+	background-color: #f8f8f8;
+}
 .breadcrumb li a:hover {
 	text-decoration: underline;
 }
